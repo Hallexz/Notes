@@ -17,6 +17,7 @@ func main() {
 
 	rootCmd.AddCommand(cmd.CreateCMD)
 	rootCmd.AddCommand(cmd.Read)
+	rootCmd.AddCommand(cmd.Edit)
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)
 		os.Exit(1)
